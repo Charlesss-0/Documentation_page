@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="documentation_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header class="bold">
+                HTML and CSS Documentation
+        </header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#HTML" >HTML</a></li>
+            <li>
+                <a class="nav-link" href="#HTML_Structure">HTML Structure</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Tags">Tags</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Attributes">Attributes</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#CSS">CSS</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#CSS_Structure">CSS Structure</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Selectors">Selectors</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Properties">Properties</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Responsive_web_Design">Responsive Web Design</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Accesibility">Accesibility</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Best_Practices">Best Practices</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="section-container">
+            <section class="main-section" id="Introduction">
+                <header class="bold not">
+                        Introduction
+                </header>
+                <article>
+                <p>
+                    HTML and CSS, are the two fundamental technologies that power the modern web. 
+                    HTML, also known as Hypertext Markup Language, is the standard language used to create web pages, while CSS, or Cascading Style Sheets, 
+                    is used to control the layout and visual appearance of those pages. These two technologies work together seamlessly to create the stunning, 
+                    dynamic, and responsive websites that we see and use every day.
+                </p>
+                <p>
+                    Whether you're a seasoned web developer or just starting out, this page will provide you with the knowledge and tools necessary 
+                    to create engaging web pages that are optimized for performance and accessibility. We'll cover everything from the basics of HTML and CSS, 
+                    including tags, attributes, selectors, and properties, to more advanced concepts like responsive design, accessibility, 
+                    and best practices for optimizing website performance.
+                </p>
+                <p>
+                    By the end of this documentation page, you'll have a solid understanding of how HTML and CSS work together to create the web pages that we all rely on. 
+                    So, let's dive in and start exploring the exciting world of web development!
+                </p>
+                </article>
+            </section>
+            <section class="main-section" id="HTML">
+                <header class="bold">
+                        HTML
+                </header>
+                <article>
+                    <p>
+                        HTML stands for HyperText Markup Language. It is the standard markup language used for creating and structuring web pages on the internet. 
+                        HTML uses a series of tags to define the content and structure of a web page, such as headings, paragraphs, links, images, tables, forms, and more. 
+                    </p>
+                    <p>
+                        HTML provides a way for web designers and developers to create web pages that can be viewed by anyone with a web browser. 
+                        The browser interprets the HTML code and displays the content and structure of the page accordingly.
+                    </p>
+                    <p>
+                        HTML is often used in combination with other web technologies such as CSS (Cascading Style Sheets) for styling and layout, 
+                        and JavaScript for adding interactivity and dynamic functionality to web pages.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="HTML_Structure">
+                <header class="bold">
+                        HTML Structure
+                </header>
+                <article>
+                    <p>
+                        <span class="bold">
+                            An HTML document has a basic structure that consists of the following elements:
+                        </span>
+                    </p>
+                        <code class="html-structure">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                         &lt;head&gt;
+                          &lt;title&gt;Page Title&lt;/title&gt;
+                         &lt;/head&gt;
+                         &lt;body&gt;
+                          &lt;h1&gt;This is a heading.&lt;/h1&gt;
+                           &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                         &lt;/body&gt;
+                        &lt;/html&gt;
+                        </code>
+                    <section>
+                            <p>
+                                <code class="code">
+                                    &lt;!<span class="code-color">DOCTYPE</span> <span class="code-color-2">html</span>&gt;
+                                </code> Defines the document type and version of HTML.
+                            </p>
+                            <p>
+                                <code class="code">
+                                    &lt;<span class="code-color">html</span>&gt;
+                                </code> Defines the start and end of the HTML document.
+                            </p>
+                            <p>
+                                <code class="code">
+                                    &lt;<span class="code-color">head</span>&gt;
+                                </code> Contains metadata about the document, such as the title.
+                            </p>
+                            <p>
+                                <code class="code">
+                                    &lt;<span class="code-color">title</span>&gt;
+                                </code> Defines the title of the document, which appears in the browser's title bar.
+                            </p>
+                            <p>
+                                <code class="code">
+                                    &lt;<span class="code-color">body</span>&gt;
+                                </code> Contains the visible content of the document.
+                            </p>
+                            <p>
+                                <code class="code">
+                                    &lt;<span class="code-color">h1</span>&gt;
+                                </code> Defines the heading element.
+                            </p>
+                            <p>
+                                <code class="code">
+                                    &lt;<span class="code-color">p</span>&gt;
+                                </code> Defines a paragraph element.
+                            </p>
+                    </section>
+                </article>
+            </section>
+            <section class="main-section" id="Tags">
+                <header class="bold">
+                        Tags
+                </header>
+                <article>
+                    <p>
+                        <span class="bold tags">
+                            HTML tags are used to define the structure of the content on a web page.
+                        </span>
+                    </p>
+                    <p>
+                        <span class="bold tags">
+                            Some tags include:
+                        </span>
+                    </p>
+                    <p>
+                        <code class="code">
+                            &lt;<span class="code-color">a</span>&gt;
+                        </code> Defines a hyperlink.
+                    </p>
+                    <p>
+                        <code class="code">
+                            &lt;<span class="code-color">img</span>&gt;
+                        </code> Displays an image.
+                    </p>
+                    <p>
+                        <code class="code">
+                            &lt;<span class="code-color">ul</span>&gt;
+                        </code>
+                            and 
+                        <code class="code">
+                            &lt;<span class="code-color">li</span>&gt;
+                        </code> Create an unordered list.
+                    </p>
+                    <p>
+                        <code class="code">
+                            &lt;<span class="code-color">ol</span>&gt;
+                        </code>
+                            and 
+                        <code class="code">
+                            &lt;<span class="code-color">li</span>&gt;
+                        </code> Create an ordered list.
+                    </p>
+                    <p>
+                        <code class="code">
+                            &lt;<span class="code-color">div</span>&gt;
+                        </code> Defines a section of the page.
+                    </p>
+                    <p>
+                        <code class="code">
+                            &lt;<span class="code-color">span</span>&gt;
+                        </code> Defines a small section of text.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Attributes">
+                <header class="bold">
+                        Attributes
+                </header>
+                <article>
+                    <p>
+                        <span class="bold attributes">
+                            HTML attributes are used to provide additional information about an element.
+                        </span>
+                    </p>
+                    <p>
+                        <span class="bold attributes">
+                            Some common attributes include:
+                        </span>
+                    </p>
+                    <p>
+                        <span class="bold attribute-color">href</span>: Used to specify the URL of a hyperlink.
+                    </p>
+                    <p>
+                        <span class="bold attribute-color">src</span>: Used to specify the URL of an image or media file.
+                    </p>
+                    <p>
+                        <span class="bold attribute-color">alt</span>: Used to provide alternative text for an image for accessibility purposes.
+                    </p>
+                    <p>
+                        <span class="bold attribute-color">id</span>: Used to give a unique identifier to an element.
+                    </p>
+                    <p>
+                        <span class="bold attribute-color">target</span>: Used to specify where a link should open, such as in a new tab or window.
+                    </p>
+                    <p>
+                        <span class="bold attribute-color">class</span>: Used to apply a class name to an element for styling purposes.
+                    </p>
+                    <p>
+
+                    </p>
+                </article>
+            </section> 
+            <section class="main-section" id="CSS">
+                <header class="bold">
+                        CSS
+                </header>
+                <article>
+                    <p>
+                        CSS stands for Cascading Style Sheets. It is a language used to describe the presentation or styling of HTML elements on a web page. 
+                        CSS provides web developers with a way to separate the content of a web page from its presentation, 
+                        allowing them to create consistent and visually appealing designs across multiple pages and websites.
+                    </p>
+                    <p>
+                        CSS works by defining styles for HTML elements using selectors, which are used to target specific HTML elements, and declarations, 
+                        which specify the styling properties to be applied to the selected elements. For example, 
+                        you can use CSS to set the color, font, size, and position of text, images, and other HTML elements on a web page.
+                    </p>
+                    <p>
+                        One of the key advantages of using CSS is that it allows developers to create responsive designs that can adapt to different screen sizes and devices, 
+                        such as smartphones and tablets. CSS also makes it easier to maintain and update the styling of a website, 
+                        as changes can be made to a single CSS file and applied across multiple pages.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="CSS_Structure">
+                <header class="bold">
+                       CSS Structure
+                </header>
+                <article>
+                    <p>
+                            CSS rules are defined within a <code>&lt;<span class="code-color">style</span>&gt;</code> element, which is typically included in the <code>&lt;<span class="code-color">head</span>&gt;</code>
+                            section of an HTML document.
+                    </p>
+                    <p>
+                        <span class="bold">
+                            A CSS rule consists of a selector and a declaration block.
+                        </span>
+                    </p>
+                    <section>
+                            <code class="css-rules">
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                              &lt;head&gt;
+                                &lt;title&gt;Page Title&lt;/title&gt;
+                                &lt;style&gt;
+                                  h1 {
+                                    color: red;
+                                  }
+                                &lt;/style&gt;
+                              &lt;/head&gt;
+                              &lt;body&gt;
+                                &lt;h1&gt;Heading 1&lt;/h1&gt;
+                                &lt;p&gt;Paragraph text&lt;/p&gt;
+                              &lt;/body&gt;
+                            &lt;/html&gt;
+                            </code>
+                    </section>
+                    <section>
+                        <p>
+                            <span class="bold">h1</span>: Selector for the heading element.
+                        </p>
+                        <p>
+                            <span class="bold">color: red; </span>: Declaration block that sets the text color of the heading to red.
+                        </p>
+                    </section>
+                </article>
+            </section>
+            <section class="main-section" id="Selectors">
+                <header class="bold">
+                        Selectors
+                </header>
+                <article>
+                    <p>
+                        <span class="bold selectors">
+                            CSS selectors are used to select elements on a web page and apply styles to them.
+                        </span>
+                    </p>
+                    <p>
+                        <span class="bold selectors">
+                            Some common selectors include:
+                        </span>
+                    </p>
+                    <p>
+                        <span class="bold">element</span>: Selects all instances of an element.
+                    </p>
+                    <p>
+                        <span class="bold">#id</span>: Selects an element with a specific ID.
+                    </p>
+                    <p>
+                        <span class="bold">.class</span>: Selects all elements with a specific class.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Properties">
+                <header class="bold">
+                        Properties
+                </header>
+                <article>
+                    <p>
+                        <span class="bold properties">
+                            CSS properties are used to define the visual style of an element.
+                        </span>
+                    </p>
+                    <p>
+                        <span class="bold properties">
+                            Some common properties include:
+                        </span>
+                    </p>
+                    <p>
+                        <span class="bold">color</span>: Defines the color of text.
+                    </p>
+                    <p>
+                        <span class="bold">font-size</span>: Defines the size of text.
+                    </p>
+                    <p>
+                        <span class="bold">background-color</span>: Defines the background color of an element.
+                    </p>
+                    <p>
+                        <span class="bold">margin</span>: Defines the space around an element.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Responsive_web_Design">
+                <header class="bold">
+                        Responsive Web Design
+                </header>
+                <article>
+                    <p>
+                        Responsive web design is a technique used to make websites look good and work well on a wide variety of devices, 
+                        from desktop computers to smartphones and tablets. The goal of responsive design is to ensure that the user 
+                        has a great experience no matter what device they are using to access the website.
+                    </p>
+                    <p>
+                        <span class="bold">There are several key concepts involved in responsive web design:</span>
+                    </p>
+                    <ul>
+                        <li>
+                            <span class="bold">Media queries:</span> Media queries are a feature of CSS that allow you to specify different styles for different screen sizes. 
+                            By using media queries, you can create styles that will be applied only on certain devices, such as smartphones or tablets.
+                        </li>
+                        <li>
+                            <span class="bold">Flexible grid layouts:</span> A flexible grid layout is one that can adjust to different screen sizes. 
+                            This is important for responsive design because it allows your website to look good on any device.
+                        </li>
+                        <li>
+                            <span class="bold">Responsive images:</span> Images are a key part of most websites, but they can be a challenge for responsive design 
+                            because they often need to be resized depending on the screen size. Responsive images are images that can adjust their size and resolution 
+                            based on the device they are being viewed on.
+                        </li>
+                        <li>
+                            <span class="bold">Mobile-first design:</span> Mobile-first design is a design approach that involves designing for mobile devices first, and then scaling up for larger screens. 
+                            This approach ensures that your website is optimized for the smallest screens first, which is important for responsive design.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Accesibility">
+                <header class="bold">
+                        Accesibility
+                </header>
+                <article>
+                    <p>
+                        Accessibility is an important consideration when creating websites using HTML and CSS. 
+                        Accessibility means designing websites that can be used by people with disabilities, such as visual impairments, hearing impairments, and motor impairments.
+                    </p>
+                    <p> 
+                        <span class="bold">
+                            Here are some key things to keep in mind when designing accessible websites:
+                        </span>
+                    </p>
+                    <ul>
+                        <li>
+                            <span class="bold">Use semantic HTML:</span> Semantic HTML means using HTML tags that describe the content of your website, rather than just using tags that control the layout. 
+                            This is important for accessibility because it helps screen readers and other assistive technologies to understand the content of your website.
+                        </li>
+                        <li>
+                            <span class="bold">Provide alternative text for images:</span> Alternative text, or "alt text," is a description of an image that can be read by screen readers. 
+                            This is important for people with visual impairments who may not be able to see the image. 
+                            By providing alt text, you can ensure that everyone can access the content of your website.
+                        </li>
+                        <li>
+                            <span class="bold">Use accessible colors:</span> Some people with visual impairments may have difficulty distinguishing certain colors. 
+                            It's important to use colors that have sufficient contrast and are easy to read. 
+                            There are many online tools available to help you check the contrast between two colors.
+                        </li>
+                        <li>
+                            <span class="bold">Provide captions and transcripts for videos:</span> Videos should be captioned and transcribed so that people with hearing impairments can access the content. 
+                            This is also helpful for people who may be watching the video in a noisy environment.
+                        </li>
+                        <li>
+                            <span class="bold">Make your website keyboard accessible:</span> Some people with motor impairments may have difficulty using a mouse. 
+                            It's important to make sure that your website can be navigated using a keyboard. 
+                            This means ensuring that all interactive elements, such as links and buttons, can be accessed using the tab key.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Best_Practices">
+                <header class="bold">
+                        Best Practices
+                </header>
+                <article>
+                    <p>
+                        Optimizing website performance is important for ensuring that your website loads quickly and provides a good user experience.
+                    </p>
+                    <p>
+                        <span class="bold">Here are some best practices to help you optimize your website for a better performance:</span>
+                    </p>
+                    <ul>
+                        <li>
+                            <span class="bold">Minimize HTTP requests:</span> HTTP requests are requests that are sent to the server to retrieve resources like images, CSS files, and JavaScript files. 
+                            The more HTTP requests your website makes, the longer it will take to load. To minimize HTTP requests, you can combine multiple CSS files and JavaScript files into a single file, 
+                            and use CSS sprites to combine multiple images into a single image.
+                        </li>
+                        <li>
+                            <span class="bold">Optimize images:</span> Large images can slow down your website's load time. To optimize images, you can compress them using image optimization tools or online services. 
+                            You can also reduce the size of images by cropping them or resizing them to the appropriate dimensions for your website.
+                        </li>
+                        <li>
+                            <span class="bold">Use CSS and JavaScript responsibly:</span> CSS and JavaScript files can be large and slow down your website's load time. To optimize performance, 
+                            use CSS and JavaScript files only when necessary, and make sure they are minified to reduce their file size. 
+                            You can also defer loading of JavaScript files that are not essential for the initial load of the page.
+                        </li>
+                        <li>
+                            <span class="bold">Use a content delivery network (CDN):</span> A CDN is a network of servers that are distributed around the world. 
+                            By using a CDN, you can reduce the amount of time it takes for your website to load by delivering content from a server that is closer to the user.
+                        </li>
+                        <li>
+                            <span class="bold">Use caching:</span> Caching involves storing frequently used files, such as CSS and JavaScript files, on the user's device so that they do not need to be downloaded every time the user visits your website. 
+                            This can greatly improve your website's load time.
+                        </li>
+                    </ul>
+                    <p>
+                        <span class="bold">
+                        If you want to learn more about JavaScript, refer to 
+                        <a 
+                        target="_blank"
+                        href="https://technical-documentation-page.freecodecamp.rocks/"
+                        class="links"
+                        >JavaScript
+                        </a>
+                        </span>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Reference">
+                <header class="bold">
+                        Reference
+                </header>
+                <article>
+                    <p>
+                        This document provides a basic overview of HTML and CSS including syntax and
+                        examples to help you get started with building web pages.
+                    </p>
+                    <p>
+                        <span class="bold">
+                            If you want to dive deeper and would like to learn more about HTML and CSS refer to 
+                            <a 
+                            href="https://www.freecodecamp.org" 
+                            target="_blank"
+                            class="links"
+                            >freecodecamp.org
+                            </a>
+                        </span>
+                    </p>
+                </article>
+            </section>
+        </section>
+        <div class="div-footer">
+        <footer class="footer">
+            <nav class="nav-footer">
+                <ul>
+                    <li>
+                        <a class="nav-links" href="#">Contact Us</a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                         <a class="nav-links" href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>
+                    &copy; FreeCodeCamp
+                </p>
+            </div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </span>
+        </footer>
+        </div>
+    </main>
+</body>
+</html>

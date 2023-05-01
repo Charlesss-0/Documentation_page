@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik&display=swap');
+
+:root {
+    --primary-color: #0a5aaa;
+    --secondary-color: #ad583e;
+    --thirtiary-color: #f0f0f0;
+    --attribute-color: #5588ff;
+    --background-color: #cfcfcf;
+    --font-color: #4d4e53;
+    --css-selector: #F0A677;
+    --css-curly-braces: #ff7914;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #888;
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #eee;
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+html,
+body {
+    min-width: 290px;
+    color: var(--font-color);
+    background-color: #f0f0f0;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+.tags {
+    margin: -0.5em;
+}
+
+.attributes {
+    margin: -0.5em;
+}
+
+.selectors {
+    margin: -0.5em;
+}
+
+.properties {
+    margin: -0.5em;
+}
+
+#Attributes p {
+    margin-bottom: 1em !important;
+}
+
+#CSS_Structure p {
+    margin-bottom: 1em !important;
+}
+
+#Selectors p {
+    margin-bottom: 1em !important;
+}
+
+#Properties p {
+    margin-bottom: 1em !important;
+}
+
+.section-container {
+    border: none;
+    margin: 0.5em;
+}
+
+.main-section {
+    border: none; 
+}
+
+#main-doc p {
+    margin: 0 0 2em 0.5em;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    line-height: 2em;
+    font-size: 20px;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    background-color: #3F3D40;
+    padding-bottom: 11.5em;
+}
+
+header {
+    color: #4d4e53;
+    margin: 2em;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+    font-family: 'Montserrat', sans-serif;
+}
+
+article>ul>li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 19px;
+    line-height: 1.8em;
+    margin: 2em 0 1em 0;
+}
+
+#navbar header {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Introduction header {
+    margin: 1em 0 0 0;
+    text-align: left;
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-doc header:not(.not) {
+    text-align: left;
+    margin: 3em 0 0 0;
+    font-size: 34px;
+}
+
+#navbar header {
+    color: #bbb;
+    font-size: 1.5em;
+}
+
+#navbar ul {
+    height: 100%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 1em;
+}
+
+#navbar ul::-webkit-scrollbar {
+    display: none;
+}
+
+#navbar li {
+    width: 100%;
+    border-top: solid #88888833;
+    border-width: thin;
+    transition: background-color 0.5s ease-out;
+    list-style: none;
+    position: relative;
+}
+
+#navbar li:hover {
+    background-color: #88888855;
+}
+
+#navbar a {
+    display: grid;
+    place-content: center;
+    padding: 0.6em;
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 292px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+section article {
+    color: #4d4e53;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+section p {
+    margin: 15px 0px 0px 20px;
+}
+
+.code {
+    display: block;
+    text-align: left;
+    background-color: var(--background-color);
+    padding: 0.8em;
+    margin: 0;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.html-structure {
+    display: block;
+    margin: 3em auto;
+    padding: 0 0 2em 5em;
+    width: 80%;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    line-height: 2;
+    white-space: pre-line;
+    font-size: 18px;
+}
+
+.css-rules {
+    display: block;
+    margin: 3em auto;
+    padding: 0 0 2em 6em;
+    width: 80%;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    line-height: 2;
+    white-space: pre-line;
+    font-size: 18px;
+}
+
+.code-color {
+    color: var(--primary-color);
+}
+
+.code-color-2 {
+    color: var(--secondary-color);
+}
+
+.attribute-color {
+    color: var(--attribute-color);
+}
+
+.links {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.links:hover {
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.footer {
+    background-color: #404040;
+    margin-top: 3em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-family: 'Montserrat';
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.nav-footer li {
+    display: inline;
+    margin: 2em;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 18px;
+}
+
+.nav-links:hover {
+    color: #fff;
+}
+
+.copyright {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: #bbb;
+    font-size: 18px;
+    margin: 0.5em;
+}
+
+.copyright p {
+    margin: 0.5em !important;
+}
+
+@media screen and (max-width: 815px) {
+    #navbar ul {
+        height: 10em;
+        max-height: 10em;
+    }
+
+    #navbar {
+        position: absolute;
+        background-color: #3F3D40;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        max-height: 16.5em;
+        z-index: 1;
+    }
+
+    #navbar header {
+        margin: 1em;
+    }
+
+    #main-doc {
+        position: relative;
+        margin: 0;
+        margin-top: 300px;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    #main-doc p {
+        font-size: 18px;
+        margin: 0 0 2em 0;
+        line-height: 1.5em;
+        margin-left: 1em;
+    }
+
+    #main-doc li {
+        font-size: 18px;
+        margin-left: 0.5em;
+        margin-bottom: 2em;
+        line-height: 1.5em;
+    }
+
+    .footer {
+        margin: 3em auto;
+        position: absolute;
+        left: -7.60px;
+        right: -7.60px;
+    }
+
+    .nav-footer {
+        padding: 0.5em;
+    }
+
+    .code {
+        margin: 0;
+        width: 100%;
+        min-width: 50%;
+        text-align: left;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    .html-structure {
+        display: block;
+        margin: 3em auto;
+        padding: 0 0 2em 5em;
+        width: 80%;
+        background-color: var(--background-color);
+        border-radius: 20px;
+        line-height: 1.8em;
+        white-space: pre-line;
+        font-size: 16px;
+    }
+
+    .css-rules {
+        display: block;
+        margin: 3em auto;
+        padding: 0 0 2em 5em;
+        width: 80%;
+        background-color: var(--background-color);
+        border-radius: 20px;
+        line-height: 1.8em;
+        white-space: pre-line;
+        font-size: 16px;
+    }
+
+    #CSS_Structure p {
+        margin-bottom: 1em;
+    }
+
+    #Attributes p {
+        margin-bottom: 1em;
+    }
+
+    #Selectors p {
+        margin-bottom: 1em;
+    }
+
+    #Properties p {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #main-doc {
+        margin-top: 300px;
+    }
+    
+    #main-doc p {
+        margin: 0 0 2em 0.5em;
+        font-size: 14px
+    }
+
+    #main-doc li {
+        font-size: 14px;
+        margin: 0 0 2em -0.5em;
+        line-height: 1.5em;
+    }
+
+    #main-doc header {
+        font-size: 24px !important;
+        margin-left: 0 !important;
+    }
+
+    .not {
+        margin-left: 0 !important;
+    }
+
+    .tags {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    .attributes {
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    .selectors {
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    .properties {
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    #navbar {
+        background-color: #3f3d40;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #navbar ul {
+        font-size: 14px;
+        height: calc(40px + 7em);
+        max-height: calc(40px + 7em);
+    }
+
+    #navbar a {
+        font-size: 20px;
+    }
+
+    .code {
+        margin: 0;
+        width: 100%;
+        min-width: 100%;
+        text-align: left;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .footer {
+        background-color: #404040;
+        margin-top: 2em;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        right: -0.57em;
+        left: -0.57em;
+        height: 11em;
+    }
+
+    .nav-footer {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        height: 5em;
+    }
+
+    .nav-footer ul {
+        width: 100%;
+        display: inline-flex;
+        padding: 0;
+    }
+
+    .nav-footer li {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin: 0 !important;
+    }
+
+    .nav-links {
+        width: 100%;
+        text-decoration: none;
+        color: #bbb;
+        font-size: 14px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .copyright {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .copyright p {
+        width: 100%;
+        text-align: center;
+        margin: 0.2em !important;
+    }
+
+    .icons {
+        display: inline-flex;
+        margin: 1.5em 0;
+    }
+
+    .icons i {
+        font-size: 1.8em !important;
+        margin-right: -0.5em !important;
+    }
+
+    .html-structure {
+        display: block;
+        margin: 3em auto;
+        padding: 0 0 2em 4em;
+        width: 90%;
+        background-color: var(--background-color);
+        border-radius: 15px;
+        font-size: 12px;
+        line-height: 2em;
+        white-space: pre-line;
+    }
+
+    .css-rules {
+        display: block;
+        margin: 3em auto;
+        padding: 0 0 2em 4em;
+        width: 90%;
+        background-color: var(--background-color);
+        border-radius: 15px;
+        font-size: 12px;
+        white-space: pre-line;
+    }
+
+    #Attributes p {
+        margin-bottom: 1em;
+    }
+
+    #CSS_Structure p {
+        margin-bottom: 1em;
+    }
+
+    #Selectors p {
+        margin-bottom: 1em;
+    }
+
+    #Properties p {
+        margin-bottom: 1em;
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+    gap: 2em;
+    padding-right: 2em;
+}
+
+.icons i {
+    font-size: 2em;
+    color: #bbb;
+    cursor: pointer;
+}

@@ -589,3 +589,19 @@ section p {
     color: #bbb;
     cursor: pointer;
 }
+
+.fa-facebook:hover {
+    color: rgb(66, 103, 178);
+}
+
+.fa-instagram:hover {
+    color: rgb(193, 53, 132);
+}
+
+.fa-twitter:hover {
+    color: rgb(86, 154, 243);
+}
+
+.fa-github:hover {
+    color: rgb(255, 123, 0);
+}
